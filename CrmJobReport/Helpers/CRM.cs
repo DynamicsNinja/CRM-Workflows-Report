@@ -6,14 +6,18 @@ using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Client;
 using Microsoft.Xrm.Sdk.Query;
 
-namespace CrmJobReport.Helpers {
-    public static class CRM {
-        public static OrganizationServiceProxy GetService(string organizationUrl, string username, string password) {
-            ClientCredentials credentials = new ClientCredentials {
+namespace CrmJobReport.Helpers
+{
+    public static class CRM
+    {
+        public static OrganizationServiceProxy GetService(string organizationUrl, string username, string password)
+        {
+            ClientCredentials credentials = new ClientCredentials
+            {
                 UserName = { UserName = username, Password = password }
             };
 
-            Uri oUri = new Uri(organizationUrl);
+            Uri oUri = new Uri(organizationUrl + "/XRMServices/2011/Organization.svc");
             OrganizationServiceProxy serviceProxy = new OrganizationServiceProxy(
                 oUri,
                 null,
@@ -23,7 +27,8 @@ namespace CrmJobReport.Helpers {
             return serviceProxy;
         }
 
-        public static string GetWorkflowGuidByWorkflowName(IOrganizationService service, string workflowName) {
+        public static string GetWorkflowGuidByWorkflowName(IOrganizationService service, string workflowName)
+        {
             var fetchXml = $@"
             <fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
               <entity name='workflow'>
