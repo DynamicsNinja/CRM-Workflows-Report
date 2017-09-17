@@ -1,4 +1,4 @@
-﻿namespace CrmJobReport.Models {
+﻿namespace CrmWorkflowsReport.Model {
     public class JobReport {
         public string Name { get; set; }
         public string Organization { get; set; }

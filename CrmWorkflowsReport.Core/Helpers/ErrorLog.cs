@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace CrmJobReport.Helpers
+namespace CrmWorkflowsReport.Core.Helpers
 {
     public static class ErrorLog
     {

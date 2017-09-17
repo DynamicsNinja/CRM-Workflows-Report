@@ -6,7 +6,7 @@ using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Client;
 using Microsoft.Xrm.Sdk.Query;
 
-namespace CrmJobReport.Helpers
+namespace CrmWorkflowsReport.Core.Helpers
 {
     public static class CRM
     {

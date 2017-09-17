@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CrmJobReport.Models;
+using CrmWorkflowsReport.Model;
 using Newtonsoft.Json;
 
-namespace CrmJobReport.Helpers
+namespace CrmWorkflowsReport.Core.Helpers
 {
     public class Settings
     {

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
-using CrmJobReport.Helpers;
-using CrmJobReport.Models;
+using CrmWorkflowsReport.Core.Helpers;
+using CrmWorkflowsReport.Model;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 

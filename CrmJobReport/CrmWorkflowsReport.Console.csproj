@@ -80,18 +80,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\CRM.cs" />
-    <Compile Include="Helpers\ErrorLog.cs" />
-    <Compile Include="Helpers\Settings.cs" />
-    <Compile Include="Models\JobReport.cs" />
-    <Compile Include="Models\MailSettings.cs" />
-    <Compile Include="Models\Organization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="CrmWorkflowsReport.Console_TemporaryKey.pfx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +98,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CrmWorkflowsReport.Core\CrmWorkflowsReport.Core.csproj">
+      <Project>{841373bf-34ea-4e5a-8338-e237e70206b1}</Project>
+      <Name>CrmWorkflowsReport.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrmWorkflowsReport.Model\CrmWorkflowsReport.Model.csproj">
+      <Project>{0787cca9-5d8d-48ea-888c-ed056c978caf}</Project>
+      <Name>CrmWorkflowsReport.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

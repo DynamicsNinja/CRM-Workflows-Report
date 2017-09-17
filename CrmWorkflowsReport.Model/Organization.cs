@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CrmJobReport.Models {
+namespace CrmWorkflowsReport.Model {
     public class Organization {
         [JsonProperty("url")]
         public string Url { get; set; }
